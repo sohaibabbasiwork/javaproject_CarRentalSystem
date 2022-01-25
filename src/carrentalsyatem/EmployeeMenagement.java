@@ -150,10 +150,12 @@ public class EmployeeMenagement extends JFrame implements ActionListener{
 			
 		}else if(ae.getSource()==b6) {
 			
-			this.setVisible(false);	
-		}else if(ae.getSource()==b7) {
+       Login log=new Login();
+        log.setVisible(true);
+        this.setVisible(false);
+                }else if(ae.getSource()==b7) {
 			
-			new Dashboard().setVisible(true);
+			new AdminFram().setVisible(true);
 			this.setVisible(false);	
 		}
 		

@@ -36,7 +36,7 @@ public class VehicleMenagement extends JFrame implements ActionListener{
 	
 	
 	VehicleMenagement(){		
-		setBounds(340,120,1254,836);
+		setBounds(40,40,1254,836);
                 
 		b1 = new JButton("Add Vehicle");
 		b1.setBackground(Color.black);
@@ -136,11 +136,12 @@ public class VehicleMenagement extends JFrame implements ActionListener{
 			
 		}else if(ae.getSource() == b5) {
 			
-			this.setVisible(false);
-			
+       Login log=new Login();
+        log.setVisible(true);
+        this.setVisible(false);			
 		}else if(ae.getSource()==b6) {
 			
-			new Dashboard().setVisible(true);
+			new AdminFram().setVisible(true);
 			this.setVisible(false);
 			
 			

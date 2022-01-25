@@ -31,7 +31,7 @@ public class CustomerInfo extends JFrame implements ActionListener {
 	
 	CustomerInfo(){
 		
-		setBounds(270,100,1000,650);
+		setBounds(40,40,1254,836);
 		
 		
 		JLabel l1 = new JLabel("Id Type");

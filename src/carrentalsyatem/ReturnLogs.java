@@ -101,7 +101,7 @@ public class ReturnLogs  extends JFrame implements ActionListener{
 		
 		getContentPane().setBackground(Color.white);
 		setLayout(null);
-		setBounds(200,200,1250,700);
+		setBounds(40,40,1254,836);
 		setVisible(true);
                 
                 

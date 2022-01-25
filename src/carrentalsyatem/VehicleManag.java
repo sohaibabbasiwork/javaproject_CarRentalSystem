@@ -136,7 +136,7 @@ public class VehicleManag extends JFrame implements ActionListener{
 			
 		}else if(ae.getSource()==b6) {
 			
-			new Dashboard().setVisible(true);
+			new AdminFram().setVisible(true);
 			this.setVisible(false);
 			
 			

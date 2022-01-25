@@ -94,7 +94,7 @@ public class EmployeeLogin extends JFrame implements ActionListener{
 				ResultSet rs = c.s.executeQuery(str);
 				
 				if(rs.next()) {
-					new Dashboard().setVisible(true);
+					new AdminFram().setVisible(true);
 					this.setVisible(false);
 				}else {
 					JOptionPane.showMessageDialog(null,"Invalid Username or Password");

@@ -21,7 +21,7 @@ public class EmployeeInfo extends JFrame implements ActionListener {
 	
 	EmployeeInfo(){
 		
-		setBounds(270,100,1000,650);
+		setBounds(40,40,1254,836);
 		
 		
 		JLabel l1 = new JLabel("Name");

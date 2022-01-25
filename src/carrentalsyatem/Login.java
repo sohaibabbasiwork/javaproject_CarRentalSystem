@@ -96,7 +96,7 @@ public class Login extends JFrame implements ActionListener{
 				ResultSet rs = c.s.executeQuery(str);
 				ResultSet rs2 = c2.s.executeQuery(str2);
 				if(rs.next()) {
-					new Dashboard().setVisible(true);
+					new AdminFram().setVisible(true);
 					this.setVisible(false);
 				}else if(rs2.next()) {
                                     new Reception().setVisible(true);

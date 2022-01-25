@@ -121,7 +121,7 @@ public class UpdateVehicle extends JFrame implements ActionListener{
 		getContentPane().setBackground(Color.white);
 		
 		setLayout(null);
-		setBounds(400,200,900,700);
+		setBounds(40,40,1254,836);
 		setVisible(true);
 		
 	}

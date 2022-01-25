@@ -4,6 +4,10 @@
  */
 package carrentalsyatem;
 
+import java.awt.Color;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
 /**
  *
  * @author Hp
@@ -32,6 +36,7 @@ public class AdminFram extends javax.swing.JFrame {
         jMenu5 = new javax.swing.JMenu();
         jMenu8 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         reception = new javax.swing.JMenu();
         reception_menagement = new javax.swing.JMenuItem();
@@ -141,11 +146,17 @@ public class AdminFram extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 902, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(370, 370, 370)
+                .addComponent(jLabel1)
+                .addContainerGap(532, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 458, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(96, 96, 96)
+                .addComponent(jLabel1)
+                .addContainerGap(362, Short.MAX_VALUE))
         );
 
         pack();
@@ -166,30 +177,41 @@ public class AdminFram extends javax.swing.JFrame {
         // TODO add your handling code here:
         Reception recep=new Reception();
         recep.setVisible(true);
+                this.setVisible(false);
+
     }//GEN-LAST:event_reception_menagementActionPerformed
 
     private void emp_menagemantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emp_menagemantActionPerformed
         // TODO add your handling code here:
        EmployeeMenagement Emp= new EmployeeMenagement();
        Emp.setVisible(true);
+               this.setVisible(false);
+
     }//GEN-LAST:event_emp_menagemantActionPerformed
 
     private void customer_managementActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customer_managementActionPerformed
         // TODO add your handling code here:
           CustomerMenagement cus= new CustomerMenagement();
        cus.setVisible(true);
+               this.setVisible(false);
+
     }//GEN-LAST:event_customer_managementActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add your handling code here:
         VehicleMenagement veh=new VehicleMenagement();
         veh.setVisible(true);
+        this.setVisible(false);
+
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // TODO add your handling code here:
-        CarRentalSyatem log=new CarRentalSyatem();
+        Login log=new Login();
         log.setVisible(true);
+        this.setVisible(false);
+
+        
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**
@@ -220,11 +242,9 @@ public class AdminFram extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new AdminFram().setVisible(true);
-            }
-        });
+           AdminFram af = new AdminFram();
+           af.setVisible(true); 
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -232,6 +252,7 @@ public class AdminFram extends javax.swing.JFrame {
     private javax.swing.JMenuItem customer_management;
     private javax.swing.JMenuItem emp_menagemant;
     private javax.swing.JMenu employee;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu2;

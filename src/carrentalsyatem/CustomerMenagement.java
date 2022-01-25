@@ -29,7 +29,7 @@ import javax.swing.JMenuItem;
 public class CustomerMenagement extends JFrame implements ActionListener{
 	
 	
-	JButton b1,b2,b3,b4,b5,b6,b7;
+	JButton b1,b2,b3,b4,b5,b6,b7,b8;
 	
 	
 	CustomerMenagement(){		
@@ -86,7 +86,7 @@ public class CustomerMenagement extends JFrame implements ActionListener{
                 b7 = new JButton("Back");
 		b7.setBackground(Color.black);
 		b7.setForeground(Color.white);
-		b7.setBounds(490,480,200,40);
+		b7.setBounds(490,560,200,40);
 		b7.addActionListener(this);
 		add(b7);
 		
@@ -151,12 +151,9 @@ public class CustomerMenagement extends JFrame implements ActionListener{
 			this.setVisible(false);				
 		}else if(ae.getSource()==b7) {
 			
-			new Dashboard().setVisible(true);
-			this.setVisible(false);
-			
-			
+			new AdminFram().setVisible(true);
+			this.setVisible(false);	
 		}
-		
 	}
 	
 	

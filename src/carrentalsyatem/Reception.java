@@ -22,14 +22,14 @@ public class Reception extends JFrame implements ActionListener{
 	
 	
 	Reception(){
-		setBounds(40,20,800,675);		
+		setBounds(40,40,1254,836);
 		setBackground(new Color(51,153,255));
 		
 		b1 = new JButton("Rent Vehicle");
 		b1.setBackground(Color.black);
 		b1.setForeground(Color.white);
 		b1.addActionListener(this);
-		b1.setBounds(300,30,200,30);
+		b1.setBounds(550,30,200,30);
 		add(b1);
 		
 		
@@ -37,14 +37,14 @@ public class Reception extends JFrame implements ActionListener{
 		b2.setBackground(Color.black);
 		b2.setForeground(Color.white);
 		b2.addActionListener(this);
-		b2.setBounds(300,80,200,30);
+		b2.setBounds(550,80,200,30);
 		add(b2);
 		
 		b3 = new JButton(" View All Vehicles");
 		b3.setBackground(Color.black);
 		b3.setForeground(Color.white);
 		b3.addActionListener(this);
-		b3.setBounds(300,130,200,30);		
+		b3.setBounds(550,130,200,30);		
 		add(b3);
 		
 		
@@ -52,7 +52,7 @@ public class Reception extends JFrame implements ActionListener{
 		b4 = new JButton("View All Employees Info");
 		b4.setBackground(Color.black);
 		b4.setForeground(Color.white);
-		b4.setBounds(300,180,200,30);
+		b4.setBounds(550,180,200,30);
 		b4.addActionListener(this);
 		add(b4);
 		
@@ -62,7 +62,7 @@ public class Reception extends JFrame implements ActionListener{
 		b5.setBackground(Color.black);
 		b5.setForeground(Color.white);
 		b5.addActionListener(this);
-		b5.setBounds(300,230,200,30);
+		b5.setBounds(550,230,200,30);
 		add(b5);
 		
 		
@@ -71,7 +71,7 @@ public class Reception extends JFrame implements ActionListener{
 		b6.setBackground(Color.black);
 		b6.setForeground(Color.white);
 		b6.addActionListener(this);
-		b6.setBounds(300,280,200,30);
+		b6.setBounds(550,280,200,30);
 		add(b6);
 		
 		
@@ -80,7 +80,7 @@ public class Reception extends JFrame implements ActionListener{
 		b7.setBackground(Color.black);
 		b7.setForeground(Color.white);
 		b7.addActionListener(this);
-		b7.setBounds(300,330,200,30);
+		b7.setBounds(550,330,200,30);
 		add(b7);
 		
 		
@@ -89,7 +89,7 @@ public class Reception extends JFrame implements ActionListener{
 		b8.setBackground(Color.black);
 		b8.setForeground(Color.white);
 		b8.addActionListener(this);
-		b8.setBounds(300,380,200,30);
+		b8.setBounds(550,380,200,30);
 		add(b8);
 		
 		
@@ -99,7 +99,7 @@ public class Reception extends JFrame implements ActionListener{
 		b9.setBackground(Color.black);
 		b9.setForeground(Color.white);
 		b9.addActionListener(this);
-		b9.setBounds(300,430,200,30);
+		b9.setBounds(550,430,200,30);
 		add(b9);
 		
 		
@@ -109,7 +109,7 @@ public class Reception extends JFrame implements ActionListener{
 		b12.setBackground(Color.black);
 		b12.setForeground(Color.white);
 		b12.addActionListener(this);
-		b12.setBounds(300,530,200,30);
+		b12.setBounds(550,530,200,30);
 		add(b12);
 		
 		
@@ -204,7 +204,9 @@ public class Reception extends JFrame implements ActionListener{
 			this.setVisible(false);
 			
 		}else if(ae.getSource() == b12) {
-			this.setVisible(false);
+                           Login log=new Login();
+                           log.setVisible(true);
+			   this.setVisible(false);
 		}
 		
 	}

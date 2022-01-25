@@ -107,7 +107,7 @@ public class CustomersLogs  extends JFrame implements ActionListener{
 		
 		getContentPane().setBackground(Color.white);
 		setLayout(null);
-		setBounds(200,200,1250,500);
+		setBounds(40,40,1254,836);
 		setVisible(true);
                 
                 
